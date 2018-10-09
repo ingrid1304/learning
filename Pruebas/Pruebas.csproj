@@ -49,7 +49,7 @@
     <Reference Include="System.Core" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Cambios.Cambio Test.cs" />
+    <Compile Include="Cambios.Cambio.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -60,6 +60,10 @@
     <ProjectReference Include="..\Banco\Banco.csproj">
       <Project>{32ea6f3b-bc92-420e-ab75-8da5b096abb7}</Project>
       <Name>Banco</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Cambios\Cambios.csproj">
+      <Project>{43afe1a0-f9a6-43ea-ab02-c57611217773}</Project>
+      <Name>Cambios</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(VSToolsPath)\TeamTest\Microsoft.TestTools.targets" Condition="Exists('$(VSToolsPath)\TeamTest\Microsoft.TestTools.targets')" />
