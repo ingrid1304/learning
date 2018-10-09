@@ -2,10 +2,10 @@
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using System;
 
-namespace Pruebas
+namespace Pruebas.Cambios
 {
     [TestClass]
-    public class UnitTest1
+    public class CambioTest
     {
         [TestMethod]
         public void TestMethod1()
