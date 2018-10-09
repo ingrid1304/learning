@@ -1,4 +1,6 @@
-﻿namespace Cambios
+﻿using System;
+
+namespace Cambios
 {
     public struct Capital
     {
@@ -23,7 +25,7 @@
             if (monto == 0)
                 return 0;
 
-            int multiplo = (int)System.Math.Floor(monto / denominacion);
+            int multiplo = (int)Math.Floor(monto / denominacion);
             monto %= denominacion;
 
             return multiplo;
@@ -31,6 +33,11 @@
 
         public static Capital Cambiar(int montoRecibido, float costo)
         {
+            if (montoRecibido < costo)
+                throw new ArgumentException("El monto recibido " +
+                    $"(${montoRecibido:###,###,###.00}) no puede ser menor al costo " +
+                    $"(${costo:###,###,###.00}).", nameof(montoRecibido));
+
             Capital capital = new Capital();
             float cambio = montoRecibido - costo;
 
