@@ -5,7 +5,7 @@ using System;
 namespace Pruebas
 {
     [TestClass]
-    internal class BancoTest
+    public class BancoTest
     {
         [TestMethod]
         public void SaldoInicial()
@@ -39,7 +39,7 @@ namespace Pruebas
             Cuenta cuenta = new Cuenta(1);
             try
             {
-                decimal resultado = cuenta.Retiro(500m);
+                decimal resultado = cuenta.Retirar(500m);
             }
             catch (Exception e)
             {
