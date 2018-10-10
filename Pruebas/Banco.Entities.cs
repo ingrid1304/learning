@@ -5,7 +5,7 @@ using System;
 namespace Pruebas.Banco
 {
     [TestClass]
-    internal class Entities
+    internal class EntitiesTest
     {
         [TestMethod]
         public void SegundoNombrePropertyTest()

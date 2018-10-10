@@ -5,7 +5,7 @@ using System;
 namespace Pruebas.Cambios
 {
     [TestClass]
-    public class CambioTestClass
+    public class CambioTest
     {
         [TestMethod]
         public void CambiarCorrecto()
