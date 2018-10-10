@@ -18,8 +18,9 @@ namespace Pruebas
         public void AbonoCorrecto()
         {
             Cuenta cuenta = new Cuenta(1);
-            cuenta.Abonar(500m);
+            decimal resultado = cuenta.Abonar(500m);
             Assert.AreEqual(cuenta.Saldo, 500m);
+            Assert.AreEqual(resultado, 500m);
         }
 
         [TestMethod]
@@ -27,8 +28,9 @@ namespace Pruebas
         {
             Cuenta cuenta = new Cuenta(1);
             cuenta.Abonar(1000m);
-            cuenta.Retirar(500m);
+            decimal resultado = cuenta.Retirar(500m);
             Assert.AreEqual(cuenta.Saldo, 500m);
+            Assert.AreEqual(resultado, 500m);
         }
 
         [TestMethod]
