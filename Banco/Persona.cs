@@ -28,10 +28,12 @@
             get
             {
                 if (segundoNombre == null)
-                    return ApellidoPaterno + " " + ApellidoMaterno + " " + PrimerNombre;
+                    return ApellidoPaterno + " " + ApellidoMaterno +
+                        " " + PrimerNombre;
 
                 else
-                    return ApellidoPaterno + " " + ApellidoMaterno + " " + PrimerNombre + " " + segundoNombre;
+                    return ApellidoPaterno + " " + ApellidoMaterno +
+                        " " + PrimerNombre + " " + segundoNombre;
             }
 
         }
