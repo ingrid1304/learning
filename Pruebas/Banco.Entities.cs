@@ -1,4 +1,4 @@
-﻿using Banco;
+﻿using Banco.Entities;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using System;
 
