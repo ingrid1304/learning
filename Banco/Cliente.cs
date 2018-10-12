@@ -13,8 +13,8 @@ namespace Banco.Entities
             Individuo = persona;
         }
 
-        public int Id { get; private set; }
-        public Persona Individuo { get; private set; }
+        public int Id { get; }
+        public Persona Individuo { get; }
         public List<Cuenta> Cuentas { get; } = new List<Cuenta>();
 
         public void AgregarCuenta(Cuenta cuenta)
