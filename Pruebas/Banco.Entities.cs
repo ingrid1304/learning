@@ -37,10 +37,6 @@ namespace Pruebas.Banco
             int i = 0;
             foreach (Cuenta cuenta in cliente.Cuentas)
                 Assert.AreEqual(++i, cuenta.Id);
-
-            //Assert.AreEqual(cliente.Cuentas[0].Id, 1);
-            //Assert.AreEqual(cliente.Cuentas[1].Id, 2);
-            //Assert.AreEqual(cliente.Cuentas[2].Id, 3);
         }
 
         [TestMethod]
@@ -50,7 +46,34 @@ namespace Pruebas.Banco
                 new Persona("Ingrid", "Luñá", "Taboada"),
                 new Cuenta(1));
 
-            cliente.AgregarCuenta(new Cuenta(1));
+            try
+            {
+                cliente.AgregarCuenta(new Cuenta(1));
+            }
+            catch (Exception e)
+            {
+                Assert.IsInstanceOfType(e, typeof(InvalidOperationException));
+            }
+        }
+
+        [TestMethod]
+        public void QuitarUltimaCuenta()
+        {
+            Cuenta cuenta = new Cuenta(1);
+            Cliente cliente = new Cliente(1,
+                new Persona("Ingrid", "Luñá", "Taboada"),
+                cuenta);
+
+            try
+            {
+                cliente.QuitarCuenta(cuenta);
+            }
+            catch (Exception e)
+            {
+                Assert.IsInstanceOfType(e, typeof(Exception));
+            }
+
+
         }
     }
 
@@ -93,7 +116,7 @@ namespace Pruebas.Banco
             }
             catch (Exception e)
             {
-                Assert.IsInstanceOfType(e, typeof(ArgumentException));
+                Assert.IsInstanceOfType(e, typeof(InvalidOperationException));
             }
         }
     }
