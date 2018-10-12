@@ -36,7 +36,7 @@ namespace Pruebas.Banco
 
             int i = 0;
             foreach (Cuenta cuenta in cliente.Cuentas)
-                Assert.AreEqual(++i, cuenta.Id);
+                Assert.AreEqual(++i, cuenta.NumeroDeCuenta);
         }
 
         [TestMethod]

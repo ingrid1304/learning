@@ -20,7 +20,7 @@ namespace Banco.Entities
         public void AgregarCuenta(Cuenta cuenta)
         {
             foreach (Cuenta c in Cuentas)
-                if (c.Id == cuenta.Id)
+                if (c.NumeroDeCuenta == cuenta.NumeroDeCuenta)
                     throw new InvalidOperationException("La cuenta que está " +
                         "intentando ingresar ya existe");
 

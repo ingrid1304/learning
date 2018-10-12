@@ -2,13 +2,13 @@
 {
     public class Cuenta
     {
-        public Cuenta(int id)
+        public Cuenta(int numeroDeCuenta)
         {
-            Id = id;
+            NumeroDeCuenta = numeroDeCuenta;
             Saldo = 0;
         }
 
-        public int Id { get; private set; }
+        public int NumeroDeCuenta { get; private set; }
         public decimal Saldo { get; private set; }
 
         public decimal Retirar(decimal retiro)
