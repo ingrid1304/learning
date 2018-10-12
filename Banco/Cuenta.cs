@@ -14,13 +14,9 @@
         public decimal Retirar(decimal retiro)
         {
             if (retiro > Saldo)
-            {
-                throw new System.ArgumentException("Saldo insuficiente");
-            }
-            else
-            {
-                return Saldo -= retiro;
-            }
+                throw new System.InvalidOperationException("Saldo insuficiente");
+
+            return Saldo -= retiro;
         }
 
         public decimal Abonar(decimal abono)
