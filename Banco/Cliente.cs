@@ -35,5 +35,12 @@ namespace Banco.Entities
 
             Cuentas.Remove(cuenta);
         }
+
+        public void CerrarCuenta()
+        {
+            /* TODO: Cerrar sólo si existe una sola cuenta y el saldo de tal cuenta está en cero */
+            
+            /* TODO: Desechar el último objeto Cuenta del listado, así como el objeto Persona asociado */
+        }
     }
 }
