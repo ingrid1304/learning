@@ -10,11 +10,11 @@ namespace Banco.Entities
             Cuentas.Add(cuenta);
 
             Id = idCliente;
-            Individuo = persona;
+            Propietario = persona;
         }
 
         public int Id { get; }
-        public Persona Individuo { get; }
+        public Persona Propietario { get; }
         public List<Cuenta> Cuentas { get; } = new List<Cuenta>();
 
         public void AgregarCuenta(Cuenta cuenta)
