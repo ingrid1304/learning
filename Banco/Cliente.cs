@@ -27,7 +27,7 @@ namespace Banco.Entities
             Cuentas.Add(cuenta);
         }
 
-        public void AgregarCuenta(Cuenta cuenta)
+        public void QuitarCuenta(Cuenta cuenta)
         {
             if (Cuentas.Count == 1)
                 throw new InvalidOperationException("El cliente debe de " +
