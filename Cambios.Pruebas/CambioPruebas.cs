@@ -2,13 +2,13 @@
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using System;
 
-namespace Pruebas.Cambios
+namespace CambiosPruebas
 {
     [TestClass]
-    public class CambioTest
+    public class CambioPruebas
     {
         [TestMethod]
-        public void CambiarCorrecto()
+        public void CambiarCorrectoPrueba()
         {
             float costo = 1623.5f;
             Capital esperado = new Capital
@@ -39,7 +39,7 @@ namespace Pruebas.Cambios
         }
 
         [TestMethod]
-        public void CambiarExcepcion()
+        public void CambiarExcepcionPrueba()
         {
             float costo = 1623.5f;
             Capital esperado = new Capital

@@ -8,8 +8,8 @@
     <ProjectGuid>{D2453AE1-2671-4116-A2AE-5DA6F8202E7A}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Pruebas</RootNamespace>
-    <AssemblyName>Pruebas</AssemblyName>
+    <RootNamespace>CambiosPruebas</RootNamespace>
+    <AssemblyName>Cambios.Pruebas</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <ProjectTypeGuids>{3AC096D0-A1C2-E12C-1390-A8335801FDAB};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
@@ -49,19 +49,13 @@
     <Reference Include="System.Core" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Banco.cs" />
-    <Compile Include="Cambios.Cambio.cs" />
+    <Compile Include="CambioPruebas.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Banco.Entities.cs" />
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Banco\Banco.csproj">
-      <Project>{32ea6f3b-bc92-420e-ab75-8da5b096abb7}</Project>
-      <Name>Banco</Name>
-    </ProjectReference>
     <ProjectReference Include="..\Cambios\Cambios.csproj">
       <Project>{43afe1a0-f9a6-43ea-ab02-c57611217773}</Project>
       <Name>Cambios</Name>
