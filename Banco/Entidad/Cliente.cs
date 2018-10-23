@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 
-namespace Banco.Entities
+namespace Banco.Entidad
 {
     public class Cliente
     {

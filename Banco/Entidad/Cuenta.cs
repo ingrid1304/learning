@@ -1,4 +1,4 @@
-﻿namespace Banco.Entities
+﻿namespace Banco.Entidad
 {
     public class Cuenta
     {
